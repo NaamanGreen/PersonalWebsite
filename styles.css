@@ -1,0 +1,389 @@
+/************ Basic Resets ************/
+
+h1, h2, h3, h4, p, ul, li {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	color: white;
+}
+
+nav ul, nav ol {
+	list-style-type: none;
+}
+
+* { box-sizing: border-box; }
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+a { text-decoration: none; }
+
+:root {
+	--rich-black: #061923;
+	--firey-rose: #FF5964;
+	--white-rock-dark: #dedfc0;
+	--white-rock: #f0f0e2;
+	--navy-blue: #000080;
+
+}
+
+/************ Basic typography *************/
+
+body {
+	font-family: 'IBM Plex Sans Condensed', sans-serif;
+	color: var(--rich-black);
+	padding-top: 100px;
+}
+
+h1, h2, h3, h4 { 
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 600;
+}
+
+h2 {
+	font-size: 24px;
+	margin-bottom: .5em;
+	color: var(--firey-rose);
+}
+
+h3 {
+	font-size: 20px;
+	margin-bottom: .5em;
+}
+
+h4 {
+	margin-bottom: .5em
+}
+
+p {
+	margin-bottom: 1em;
+	line-height: 1.4em;
+}
+
+
+/************ Basic Page Sections *************/
+
+#page{
+	max-width: 1500px;
+	margin: auto;
+}
+
+section, footer {
+	padding: 20px;
+	margin-bottom: 150px;
+}
+
+section section {
+	margin: 0;
+	padding: 0;
+}
+
+/************ Header Styles *************/
+
+header {
+	height: 100px;
+	padding: 10px 10px;
+	background-color: rgba(0,0,0,0.75);
+	position: fixed;
+	top: 0;
+	left: 10;
+	width: 100%;
+	z-index: 10;
+}
+
+header nav ul {
+	display: flex;
+	justify-content: center;
+}
+
+header nav ul li a {
+	display: block;
+	font-family: 'Quicksand', sans-serif;
+	color: white;
+	font-weight: 600;
+	padding: 0 5px;
+}
+
+
+/************ Summary Styles *************/
+
+
+#summary {
+	padding: 120px 10px 0 55px;
+}
+
+#portrait { 
+	content:url("images/portrait_medium.jpg"); 
+	display: block;
+  	margin-left: auto;
+ 	margin-right: auto;
+	margin-top: 5%;
+}
+
+.introduction h2 {
+	font-size: 30px;
+}
+
+.introduction p {
+	font-size: 20px;
+}
+
+#summary section {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
+}
+
+
+/************ Experience Styles *************/
+
+#experience {
+	background-color: var(--navy-blue);
+	color: #fff;
+}
+
+#experience h2 {
+	color: #fff;
+}
+
+#experience #tabs > ul {
+	display: flex;
+	list-style-type: none;
+}
+
+#experience #tabs > ul > li > a {
+    display:block;
+    height:30px;
+    line-height:30px;
+    margin-right:5px;
+    background: var(--white-rock-dark);
+    color: var(--rich-black);
+    padding:0 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#experience #tabs > div {
+	display: none;
+	padding: 15px;
+	background: var(--white-rock);
+	color: var(--rich-black);
+	border-top-right-radius: 10px;
+	min-height: 200px;
+}
+
+#experience #tabs > div:first-of-type {
+	display: block;
+	background: var(--white-rock);
+}
+
+#experience #tabs > ul > li:first-of-type a {
+	background: var(--white-rock);
+}
+
+#experience #tabs div ul {
+	margin-left: 1em;
+	margin-bottom: 1em;
+}
+
+#experience #tabs div ul li {
+	margin-bottom: .5em;
+}
+
+#experience #tabs div article {
+	margin-bottom: 20px;
+}
+
+#experience #tabs div h3 {
+
+	text-align: center;
+}
+
+#experience #tabs div h4 {
+	text-align: center;
+}
+
+/************ Projects Styles *************/
+
+#projects img {
+	display: block;
+ 	margin-left: auto;
+  	margin-right: auto;
+}
+
+/************ Hobbies Styles **************/
+#slider {
+	margin-bottom: 150px;
+}
+
+#slider .flexslider ul li > div {
+	height: 0;
+	padding-top: 46.7%;
+	position: relative;
+}
+
+#slider > .flexslider > ul > li > div { 
+	background-size: cover;
+}
+
+div[class*="slide"]{
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+.slide1 { 
+	background-image: url("images/hobbies/family_small.jpg"); 
+}
+
+.slide2 { 
+	background-image: url("images/hobbies/exerciseband_small.jpg");
+}
+
+.slide3 { 
+	background-image: url("images/hobbies/books_small.jpg");
+}
+
+.slide4 { 
+	background-image: url("images/hobbies/jogging_small.jpg"); 
+}
+
+.slide5 { 
+	background-image: url("images/hobbies/boardgame_small.jpg"); 
+}
+
+
+/************ Footer Styles *************/
+#page > footer {
+	background: rgba(0,0,0,0.75);
+	color: var(--jasmine);
+	margin-bottom: 0;
+}
+
+footer .logo {
+	margin-bottom: 20px;
+}
+
+footer .logo h1{
+	color: var(--jasmine);
+}
+
+footer nav ul {
+	display:inline-flex;
+	justify-content: space-around;
+	margin-bottom: 10px;
+}
+
+footer article h2 {
+	font-size: 20px;
+	/* text-align: center; */
+	color: var(--white-rock);
+}
+
+footer article a {
+	color: var(--white-rock);
+}
+
+footer article p {
+	font-size: 20px;
+	color: var(--white-rock);
+}
+
+
+/************ Tablet Size Styles *************/
+@media only screen and (min-width: 760px) {
+
+	/* summary styles */
+	#summary { display: flex;}
+    #summary > article { flex:2; margin-right: 20px;}
+    #summary > section { flex: 3; padding-top: 3em; }
+	#portrait { content: url("images/portrait_large.jpg"); }
+
+	/* experience styles */
+	#experience { display: flex; }
+	#experience article:first-of-type { flex: 2; margin-right: 20px; }
+	#experience article:last-of-type { flex: 3;}
+
+	/* hobbies styles */
+	.slide1 { background-image: url("images/hobbies/family_medium.jpg"); }
+	.slide2 { background-image: url("images/hobbies/exerciseband_medium.jpg"); }
+	.slide3 { background-image: url("images/hobbies/books_medium.jpg"); }
+	.slide4 { background-image: url("images/hobbies/jogging_medium.jpg"); }
+	.slide5 { background-image: url("images/hobbies/boardgame_medium.jpg"); }
+
+	/* footer styles */
+    #page > footer { display: flex; }
+    #page > footer .logo { flex: 1; margin: 0; }
+    #page > footer nav { flex: 1; margin:10px 20px 0 0; }
+    #page > footer article { flex: 2; margin-top: 10px;  }
+
+}
+
+/************ Large Tablet Size Styles *************/
+@media only screen and (min-width: 1020px) {
+	
+	/* body, header styles*/
+	body { padding: 0;}
+	header { display: flex; justify-content: space-between; align-items: center; }
+	header .logo { flex: 1; margin-left: 20px; }
+	header nav { flex: 2; }
+	header nav ul { justify-content: flex-end; margin-right: 20px; }
+	header nav ul li a { padding: 20px 10px; }
+
+	/* experience styles */
+	#experience article:first-of-type { flex: 1; }
+	#experience article:last-of-type { flex: 4; }
+	#experience .container { display: flex; justify-content: space-between; }
+	#experience .container article { flex: 1; padding: 0 10px 40px 10px; margin: 0; position: relative;}
+	#experience .container article button{ position: absolute; bottom: 0;}
+
+}
+
+/************ Desktop Size Styles *************/
+
+@media only screen and (min-width: 1200px) {
+	
+	/* Page styles */
+	section { padding: 50px; }
+	#page > footer { padding: 50px; margin-bottom: 0;}
+
+	/* Header styles */
+	header .logo { margin-left: 50px; }
+	header nav ul { margin-right: 50px; }
+	header .logo h1 { font-size: 36px; top: 12px;left: 60px; }
+	header .logo img { width: 70px; }
+
+	/* summary styles */
+    #summary > article { flex: 1; margin-right: 50px;}
+    #summary > section { flex: 2; padding-top: 3em; }
+    #summary > section { grid-template-columns: 1fr 1fr; grid-gap: 50px; }
+	#portrait { content: url("images/portrait_large.jpg"); }
+
+	/* experience styles */
+	#experience > article:first-of-type { margin-right: 50px; }
+	#experience .container article { flex: 1; padding: 0 20px 40px 20px;}
+
+	/* hobbies styles */
+	.slide1 { background-image: url("images/hobbies/family_large.jpg"); }
+	.slide2 { background-image: url("images/hobbies/exerciseband_large.jpg"); }
+	.slide3 { background-image: url("images/hobbies/books_large.jpg"); }
+	.slide4 { background-image: url("images/hobbies/jogging_large.jpg"); }
+	.slide5 { background-image: url("images/hobbies/boardgame_large.jpg"); }
+
+	/* Footer styles */
+    #page > footer nav { flex: 2 }
+    #page > footer nav ul { justify-content: flex-start; }
+    #page > footer nav ul li { margin-right: 20px; }
+    #page > footer article { padding: 0 20px; }
+}
+
+/************ Maximum Size Styles *************/
+
+@media only screen and (min-width: 1500px) {
+	header { width: 1500px; left: 50%; transform: translateX(-50%); }
+	
+}
