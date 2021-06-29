@@ -3,7 +3,8 @@
 (function(){
     "use strict";
 
-    $('#tabs > ul > li > a').click(function(){
+    $('#tabs > ul > li > a').click(function(event){
+        event.preventDefault();
         $('#tabs > ul > li > a').css({background: '#dedfc0', color: 'black'});
         $(this).css({background: '#f0f0e2'});
         const thisTab = $(this).attr('href');
