@@ -209,10 +209,23 @@ header nav ul li a {
 
 /************ Projects Styles *************/
 
-#projects img {
+#projects {
+	display: grid;
+    grid-gap: 20px;
+}
+
+#projects article {
 	display: block;
- 	margin-left: auto;
-  	margin-right: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 50%);
+    margin-bottom: 20px;
+}
+
+#video {
+	margin: 0 auto; 
+	width: 100%;
 }
 
 /************ Hobbies Styles **************/
@@ -341,6 +354,11 @@ footer article p {
 	#experience .container article { flex: 1; padding: 0 10px 40px 10px; margin: 0; position: relative;}
 	#experience .container article button{ position: absolute; bottom: 0;}
 
+	/* project styles */
+	#projects {
+		grid-template-columns: 1fr 1fr;
+	}
+
 }
 
 /************ Desktop Size Styles *************/
@@ -366,6 +384,12 @@ footer article p {
 	/* experience styles */
 	#experience > article:first-of-type { margin-right: 50px; }
 	#experience .container article { flex: 1; padding: 0 20px 40px 20px;}
+
+	/* project styles */
+	#projects {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
 
 	/* hobbies styles */
 	.slide1 { background-image: url("images/hobbies/family_large.jpg"); }
