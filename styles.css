@@ -112,7 +112,6 @@ header nav ul li a {
 	padding: 0 5px;
 }
 
-
 /************ Summary Styles *************/
 
 
@@ -227,9 +226,24 @@ header nav ul li a {
     margin-bottom: 20px;
 }
 
+#projects article h2 {
+	text-align: center;
+}
+
+
+#projects article a img {
+  	margin-left: auto;
+  	margin-right: auto;
+}
+
+
 #video {
 	margin: 0 auto; 
 	width: 100%;
+}
+
+.hidden {
+	visibility: hidden;
 }
 
 /************ Hobbies Styles **************/
@@ -378,7 +392,7 @@ footer article p {
 
 	/* project styles */
 	#projects {
-		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
 	}
 
 	/* hobbies styles */
