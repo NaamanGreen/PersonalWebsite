@@ -230,10 +230,16 @@ header nav ul li a {
 	text-align: center;
 }
 
+#projects article div {
+	text-align: center;
+}
 
-#projects article a img {
-  	margin-left: auto;
-  	margin-right: auto;
+#projects article div a button {
+	display: inline;
+  	margin: 0 auto;
+	padding: 5px;
+	margin-bottom: 5px;
+	
 }
 
 
