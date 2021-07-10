@@ -13,3 +13,8 @@ div {
     padding: 10px;
 }
 
+label.error {
+    padding: 5px;
+    color:#D40004 !important;
+    text-transform:uppercase !important;
+}

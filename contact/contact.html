@@ -14,7 +14,16 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
         <!-- Custom Styles -->
-		<link href="contact.css" rel="stylesheet">	    
+		<link href="contact.css" rel="stylesheet">	   
+        
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+
+        <!-- validator plugin -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js" defer></script>
+
+        <!-- validator script -->
+        <script src="validateScript.js" defer></script>
    </head>
 
 <body>
@@ -24,7 +33,7 @@
                 <button id="back" class="ui inverted button" type="submit">Back to naamangreen.com</button>
             </a> 
         </div>
-        <form class="ui large inverted form">
+        <form id="contactForm" class="ui large inverted form">
             <div class="field">
                 <label>Name</label>
                 <input type="text" name="name" placeholder="Name">
@@ -39,7 +48,7 @@
             </div>
             <div class="field">
                 <label>Message</label>
-                <textarea rows="2"></textarea>
+                <textarea name="message" placeholder="Message..." rows="2"></textarea>
             </div>
             <div>
                 <button class="ui inverted button" type="submit">Submit</button>
